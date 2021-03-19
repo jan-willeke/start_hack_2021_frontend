@@ -1,0 +1,14 @@
+/* Base CSS for the whole app - can override the Bootstrap default where needed */
+
+body {
+  /* Here we specify a Google Font included from cdn in index.html instead of the default bootstrap font, for example */
+  font-family: 'PT Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background-image {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: auto;
+}
