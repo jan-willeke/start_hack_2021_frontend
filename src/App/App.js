@@ -11,7 +11,7 @@ import Questionnaire4 from "./Pages/Questionnaires/Questionnaire4";
 
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
