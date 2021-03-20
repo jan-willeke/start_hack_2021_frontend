@@ -38,3 +38,7 @@ body {
 .larger {
   font-size: 1.5rem;
 }
+
+.img-small {
+  max-height: 200px;
+}
