@@ -2,6 +2,7 @@ import React from "react";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
+import Me from "./Pages/Me";
 
 import {
   BrowserRouter as Router,
@@ -20,6 +21,9 @@ export default function App() {
           </Route>
           <Route path="/">
             <Home />
+          </Route>
+          <Route path="/me">
+            <Me />
           </Route>
         </Switch>
       </div>

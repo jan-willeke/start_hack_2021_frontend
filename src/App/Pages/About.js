@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
     return <div className="container m-4">
-        <h1>We are HappiNetwork.</h1>
-        <h3>Say goodbye to feeling isolated when working from home. Our tool enables remote teams to network and share knowledge in an effective and most importantly <span className="text-primary">fun</span> way.</h3>
+        <h1>About Us.</h1>
+        <h3>Take a few short surveys and we will match you with a network of other employees to help you grow and develop in the company.</h3>
     </div>;
 }
