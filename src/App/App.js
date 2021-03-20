@@ -4,6 +4,9 @@ import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Me from "./Pages/Me";
 import Questions from "./Pages/Questions";
+import Questionnaire1 from "./Pages/Questionnaires/Questionnaire1";
+import Questionnaire2 from "./Pages/Questionnaires/Questionnaire2";
+import Questionnaire3 from "./Pages/Questionnaires/Questionnaire3";
 
 import {
   BrowserRouter as Router,
@@ -17,10 +20,13 @@ export default function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/questions" component={Questions}/>
-          <Route path="/about" component={About} />
-          <Route path="/me" component={Me} />
-          <Route path="/" component={Home} />
+          <Route path="/q1" exact component={Questionnaire1} />
+          <Route path="/q2" exact component={Questionnaire2} />
+          <Route path="/q3" exact component={Questionnaire3} />
+          <Route path="/questions" exact component={Questions}/>
+          <Route path="/about" exact component={About} />
+          <Route path="/me" exact component={Me} />
+          <Route path="/" exact component={Home} />
         </Switch>
       </div>
     </Router>
