@@ -9,8 +9,8 @@ body {
   position: absolute;
   bottom: 0;
   z-index: -1;
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 .questions-feature-img {
