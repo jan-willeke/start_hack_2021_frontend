@@ -3,6 +3,7 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Me from "./Pages/Me";
+import Questions from "./Pages/Questions";
 
 import {
   BrowserRouter as Router,
@@ -16,6 +17,7 @@ export default function App() {
       <div>
         <Navbar />
         <Switch>
+          <Route path="/questions" component={Questions}/>
           <Route path="/about" component={About} />
           <Route path="/me" component={Me} />
           <Route path="/" component={Home} />
