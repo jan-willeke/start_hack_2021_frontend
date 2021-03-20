@@ -16,11 +16,10 @@ import {
   Route
 } from "react-router-dom";
 
-var hashHistory = Router.hashHistory;
 
 export default function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL} history={hashHistory}>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar />
         <Switch>
