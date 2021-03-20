@@ -12,3 +12,19 @@ body {
   height: 100%;
   width: auto;
 }
+
+.questions-feature-img {
+  height: 25vh;
+  width: auto;
+}
+
+.centre-img {
+  width: 100%;
+  text-align: center;
+}
+
+.card-small {
+  display: inline-block;
+  margin: auto;
+  max-width: 500px;
+}
