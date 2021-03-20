@@ -17,7 +17,7 @@ import {
 
 export default function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL} history={hashHistory}>
       <div>
         <Navbar />
         <Switch>
