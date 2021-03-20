@@ -42,3 +42,28 @@ body {
 .img-small {
   max-height: 200px;
 }
+
+.survey > h5 {
+  margin-top: 90px;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+a.nav-link {
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+a.nav-link:active {
+  text-decoration: underline;
+  text-decoration-color: #e83e8c;
+}
+
+.btn-lg {
+  min-width: 400px;
+}
