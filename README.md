@@ -6,6 +6,8 @@
 - Run `npm start` to start the development server
 - Make changes and press save - server should auto reload and reflect the changes in the app
 
+- Live app at [http://jan-willeke.github.io/start_hack_2021_frontend](http://jan-willeke.github.io/start_hack_2021_frontend)
+
 # Below: The stock README that comes with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
