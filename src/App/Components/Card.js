@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Card(props) {
     return (
-        <div className="card m-3 card-small">
-            <h3 className="card-header">{props.header}</h3>
+        <div className="card col-12 col-md-5 m-0 p-0 question-card m-4">
+            <div className="card-header h3">
+                {props.header}
+            </div>
             <div className="card-body">
                 {props.children}
             </div>

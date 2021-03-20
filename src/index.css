@@ -25,9 +25,14 @@ body {
   text-align: center;
 }
 
-.card-small {
-  display: inline-block;
-  margin: auto;
-  max-width: 500px;
-  max-height: 25vh;
+.large-button {
+  font-size: 30px;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.btn {
+  border-radius: 1rem;
 }
