@@ -9,11 +9,14 @@ import Questionnaire2 from "./Pages/Questionnaires/Questionnaire2";
 import Questionnaire3 from "./Pages/Questionnaires/Questionnaire3";
 import Questionnaire4 from "./Pages/Questionnaires/Questionnaire4";
 
+
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+
+var hashHistory = Router.hashHistory;
 
 export default function App() {
   return (
