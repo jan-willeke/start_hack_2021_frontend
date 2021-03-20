@@ -14,8 +14,10 @@ body {
 }
 
 .questions-feature-img {
-  height: 25vh;
-  width: auto;
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 10px;
 }
 
 .centre-img {
@@ -27,4 +29,5 @@ body {
   display: inline-block;
   margin: auto;
   max-width: 500px;
+  max-height: 25vh;
 }
