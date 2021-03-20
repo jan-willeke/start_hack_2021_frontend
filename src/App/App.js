@@ -16,9 +16,9 @@ export default function App() {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/me" exact component={Me} />
+          <Route path="/about" component={About} />
+          <Route path="/me" component={Me} />
+          <Route path="/" component={Home} />
         </Switch>
       </div>
     </Router>
