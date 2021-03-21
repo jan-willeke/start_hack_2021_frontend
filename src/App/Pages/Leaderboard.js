@@ -31,12 +31,12 @@ export default function Leaderboard() {
                     <td>16</td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
+                    <th scope="row">4</th>
                     <td>Coffee Addicts</td>
                     <td>10</td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
+                    <th scope="row">5</th>
                     <td>Challengers</td>
                     <td>8</td>
                 </tr>
