@@ -82,3 +82,13 @@ a.nav-link:active {
   width: 100%;
   height: auto;
 }
+
+.rounded-box {
+  border-style: solid;
+  border-color: #243830;
+  border-radius: 50px;
+  border-width: 3px;
+  padding: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

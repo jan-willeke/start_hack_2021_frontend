@@ -1,9 +1,8 @@
 import React from "react";
-import { ReactComponent as HomeOffice } from "../../Img/HomeOffice.svg";
 import { NavLink } from "react-router-dom";
 
 export default function MyStats() {
-    return <div className="container p-4">
+    return <div className="container p-4 rounded-box">
 
         <h1 className="text-primary">My stats</h1>
         <p className="larger">You can find information about your connections, your previous Teams, your previous projects and your Rewards here.</p>
@@ -25,15 +24,13 @@ export default function MyStats() {
         </ul>
         <p className="larger">My previous Projects</p>
         <ul>
-            <li>Team name: Ultimate4 <span className="btn btn-primary mt-4 btn-lg">Details</span></li>
-            <li>Team name: NoPainNoGain <span className="btn btn-primary mt-4 btn-lg">Details</span></li>
-            <li>Team name: AcetheMaze <span className="btn btn-primary mt-4 btn-lg">Details</span></li>
-            <li></li>
+            <li className="mt-4">Team name: Ultimate4 <span className="btn btn-primary">Details</span></li>
+            <li className="mt-4">Team name: NoPainNoGain <span className="btn btn-primary">Details</span></li>
+            <li className="mt-4">Team name: AcetheMaze <span className="btn btn-primary">Details</span></li>
         </ul>
         <p className="larger">Team Rewards</p>
         <p>UBER Eats $10 Voucher</p>
         <p>1 More Day Off</p>
-        <HomeOffice className="background-image" />
         <NavLink to="/" className="btn btn-primary mt-4 btn-lg">Settings</NavLink>
     </div>;
 }
