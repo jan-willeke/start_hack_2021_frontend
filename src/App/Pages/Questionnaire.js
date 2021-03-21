@@ -118,13 +118,13 @@ export default function Questionnaire() {
                 </SliderContainer>
 
                 <h5 >Select some skills you would like to improve at</h5>
-                <Select options={skills} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, skills_to_learn: userInfo.skills_to_learn.concat([val.option.value]) })}/>
+                <Select options={skills} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, skills_to_learn: userInfo.skills_to_learn.concat(val?.option?.value ? [val.option.value] : []) })}/>
                 <h5 >Select some skills you think you are strong at</h5>
-                <Select options={skills} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, skills_already: userInfo.skills_already.concat([val.option.value]) })}/>
+                <Select options={skills} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, skills_already: userInfo.skills_already.concat(val?.option?.value ? [val.option.value] : []) })}/>
                 <h5 >Choose some hobbies that you enjoy</h5>
-                <Select options={hobbies} className="my-2"isMulti onChange={(_, val) => setUserInfo({ ...userInfo, hobbies: userInfo.hobbies.concat([val.option.value]) })}/>
+                <Select options={hobbies} className="my-2"isMulti onChange={(_, val) => setUserInfo({ ...userInfo, hobbies: userInfo.hobbies.concat(val?.option?.value ? [val.option.value] : []) })}/>
                 <h5 >Choose some programming languages that you enjoy using</h5>
-                <Select options={proglangs} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, prog_langs: userInfo.prog_langs.concat([val.option.value]) })}/>
+                <Select options={proglangs} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, prog_langs: userInfo.prog_langs.concat(val?.option?.value ? [val.option.value] : []) })}/>
                 <NavLink to={{
                     pathname: '/options',
                     state: userInfo
