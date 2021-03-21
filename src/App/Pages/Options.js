@@ -25,17 +25,6 @@ export default function Options() {
             <p>https://a1marketing.slack.com/team/SHGJFGJA8</p>
             <h3>The Clojurians</h3>
             <p>https://a1marketing.slack.com/team/U1H63D8SZ</p>
-            <br/>
-            <h1>Here are some groups you should join:</h1>
-            <h3>The Lunch Runners</h3>
-            <p>https://a1marketing.slack.com/team/U3435349B</p>
-            <h3>Casual Coffee Chat</h3>
-            <p>https://a1marketing.slack.com/team/GKSJHKJF4</p>
-            <h3>Foodie Group</h3>
-            <p>https://a1marketing.slack.com/team/SHGJFGJA8</p>
-            <h3>The Clojurians</h3>
-            <p>https://a1marketing.slack.com/team/U1H63D8SZ</p>
-
             <small>This is an example output</small>
         </div> : null}
         {showPopup ? null :

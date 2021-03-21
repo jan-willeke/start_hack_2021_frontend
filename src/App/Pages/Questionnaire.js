@@ -27,9 +27,10 @@ export default function Questionnaire() {
 
     function submitForm() {
         let formData = JSON.parse(JSON.stringify(userInfo));
-        formData.email = "info@example.com";
-        formData.name = "John Smith";
-        axios.post("https://starthack-backend.herokuapp.com/users/")
+        formData.email = "person@example.com";
+        formData.name = "Jan";
+        // Send form to backend
+        axios.put("https://starthack-backend.herokuapp.com/users/1/", formData)
             .then(() => history.push("/options"))
             .catch(() => alert("Please enter an answer for all the required fields"));
     }
