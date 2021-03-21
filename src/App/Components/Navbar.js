@@ -11,6 +11,7 @@ export default function Navbar() {
         <li className="nav-item active"><NavLink to="/about" className="nav-link">About</NavLink></li>
         <li className="nav-item active"><NavLink to="/me" className="nav-link">Start</NavLink></li>
         <li className="nav-item active"><NavLink to="/leaderboard" className="nav-link">Team Leaderboard</NavLink></li>
+        <li className="nav-item active"><NavLink to="/ideahub" className="nav-link">Idea Hub</NavLink></li>
         <li className="nav-item active"><NavLink to="/mystats" className="nav-link">My Stats</NavLink></li>
       </ul>
     </nav>

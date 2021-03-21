@@ -2,6 +2,7 @@ import React from "react";
 import About from "./Pages/About";
 import Leaderboard from "./Pages/Leaderboard";
 import MyStats from "./Pages/MyStats";
+import IdeaHub from "./Pages/IdeaHub";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Questionnaire from "./Pages/Questionnaire";
@@ -21,6 +22,7 @@ export default function App() {
       <div>
         <Navbar />
         <Switch>
+        <Route path="/ideahub" exact component={IdeaHub}/>
         <Route path="/mystats" exact component={MyStats}/>
         <Route path="/leaderboard" exact component={Leaderboard}/>
           <Route path="/options" exact component={Options}/>
