@@ -6,7 +6,8 @@ export default function MyStats() {
     return <div className="container p-4">
 
         <h1 className="text-primary">My stats</h1>
-        <p className="larger">You can find information about your connections, your previous Teams and projects and your Rewards here.<span className="text-primary">fun</span> way.</p>
+        <p className="larger">You can find information about your connections, your previous Teams, your previous projects and your Rewards here.</p>
+        <p className="larger"></p>
         <HomeOffice className="background-image" />
         <NavLink to="/me" className="btn btn-primary mt-4 btn-lg">Start your PeerNet networking journey</NavLink>
     </div>;
