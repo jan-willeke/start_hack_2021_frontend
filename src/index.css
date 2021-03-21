@@ -61,11 +61,6 @@ a.nav-link {
   padding: 3px 0;
 }
 
-a.nav-link:active {
-  text-decoration: underline;
-  text-decoration-color: #e83e8c;
-}
-
 .btn-lg {
   width: 400px;
   max-width: 80vw;
