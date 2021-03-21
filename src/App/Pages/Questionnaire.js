@@ -1,11 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import Slider from '@material-ui/core/Slider';
 import SliderContainer from "../Components/SliderContainer";
 import axios from 'axios';
 import Select from 'react-select'
+import { useHistory } from "react-router-dom";
 
 export default function Questionnaire() {
+
+    const history = useHistory();
 
     function makeChoice(tag) {
         return {label: tag.name, value: tag.id};
@@ -22,6 +24,15 @@ export default function Questionnaire() {
             setSkills(res.data.map(makeChoice));
         })
     }, [])
+
+    function submitForm() {
+        let formData = JSON.parse(JSON.stringify(userInfo));
+        formData.email = "info@example.com";
+        formData.name = "John Smith";
+        axios.post("https://starthack-backend.herokuapp.com/users/")
+            .then(() => history.push("/options"))
+            .catch(() => alert("Please enter an answer for all the required fields"));
+    }
 
 
     const [skills, setSkills] = React.useState([]);
@@ -125,10 +136,7 @@ export default function Questionnaire() {
                 <Select options={hobbies} className="my-2"isMulti onChange={(_, val) => setUserInfo({ ...userInfo, hobbies: userInfo.hobbies.concat(val?.option?.value ? [val.option.value] : []) })}/>
                 <h5 >Choose some programming languages that you enjoy using</h5>
                 <Select options={proglangs} className="my-2" isMulti onChange={(_, val) => setUserInfo({ ...userInfo, prog_langs: userInfo.prog_langs.concat(val?.option?.value ? [val.option.value] : []) })}/>
-                <NavLink to={{
-                    pathname: '/options',
-                    state: userInfo
-                }} className="btn btn-primary mt-5 btn-lg">Let's go!</NavLink>
+                <button className="btn btn-primary mt-5 btn-lg" onClick={() => submitForm()}>Let's go!</button>
             </div>
         </div>
     );

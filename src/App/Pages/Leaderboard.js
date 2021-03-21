@@ -1,6 +1,5 @@
 import React from "react";
 import { ReactComponent as HomeOffice } from "../../Img/HomeOffice.svg";
-import { NavLink } from "react-router-dom";
 
 export default function Leaderboard() {
     return <div className="container p-4">
