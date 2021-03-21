@@ -65,5 +65,18 @@ a.nav-link:active {
 }
 
 .btn-lg {
-  min-width: 400px;
+  width: 400px;
+  max-width: 80vw;
+}
+
+.network-img {
+  width: 100%;
+  height: auto;
+  padding: auto;
+  padding: 50px;
+}
+
+.peernet-img {
+  width: 100%;
+  height: auto;
 }
