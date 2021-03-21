@@ -59,7 +59,7 @@ export default function Questionnaire() {
 
     return (
         <div className="container p-4">
-            <h1 className="text-primary">Welcome</h1>
+            <h1 className="text-primary">Welcome, example user</h1>
             <h2>Please fill out this short questionnaire</h2>
             <div className="survey my-5">
                 <h5 >How supported do you feel at work?</h5>
