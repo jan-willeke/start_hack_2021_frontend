@@ -23,6 +23,16 @@ export default function MyStats() {
             <li>Marian</li>
             <li>Peter</li>
         </ul>
+        <p className="larger">My previous Projects</p>
+        <ul>
+            <li>Team name: Ultimate4 <span className="btn btn-primary mt-4 btn-lg">Details</span></li>
+            <li>Team name: NoPainNoGain <span className="btn btn-primary mt-4 btn-lg">Details</span></li>
+            <li>Team name: AcetheMaze <span className="btn btn-primary mt-4 btn-lg">Details</span></li>
+            <li></li>
+        </ul>
+        <p className="larger">Team Rewards</p>
+        <p>UBER Eats $10 Voucher</p>
+        <p>1 More Day Off</p>
         <HomeOffice className="background-image" />
         <NavLink to="/" className="btn btn-primary mt-4 btn-lg">Settings</NavLink>
     </div>;
